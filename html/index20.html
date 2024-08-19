@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 20</title>
+
+
+    <style>
+        /* Estilização geral do contêiner */
+.container {
+    width: 100%; /* Usa 100% da largura do contêiner pai */
+    overflow: hidden; /* Evita que o contêiner colapse com floats */
+}
+
+/* Estilização da coluna esquerda */
+.left-column {
+    float: left; /* Alinha a coluna à esquerda */
+    width: 30%; /* 30% da largura do contêiner */
+    background-color: #f1f1f1; /* Cor de fundo */
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+/* Estilização da coluna direita */
+.right-column {
+    float: left; /* Alinha a coluna à direita */
+    width: 70%; /* 70% da largura do contêiner */
+    background-color: #e2e2e2; /* Cor de fundo */
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+/* Reset de floats para limpar o contêiner */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h2>Coluna Esquerda</h2>
+            <p>Esta é a coluna da esquerda, ocupando 30% da largura total.</p>
+        </div>
+        <div class="right-column">
+            <h2>Coluna Direita</h2>
+            <p>Esta é a coluna da direita, ocupando 70% da largura total.</p>
+        </div>
+    </div>
+</body>
+</html>

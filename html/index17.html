@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios17</title>
+
+<style>
+    .vertical-menu {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    width: 200px; /* Largura fixa */
+    background-color: #f1f1f1; /* Cor de fundo do menu */
+    border: 1px solid #ccc; /* Borda ao redor do menu */
+}
+
+.vertical-menu li {
+    display: block;
+}
+
+.vertical-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: black;
+    background-color: #f1f1f1; /* Cor de fundo padrão */
+}
+
+.vertical-menu li a:hover {
+    background-color: #4CAF50; /* Cor de fundo ao passar o mouse */
+    color: white;
+}
+
+/* Cores de fundo diferentes ao passar o mouse */
+.vertical-menu li:nth-child(1) a:hover {
+    background-color: #4CAF50;
+}
+
+.vertical-menu li:nth-child(2) a:hover {
+    background-color: #2196F3;
+}
+
+.vertical-menu li:nth-child(3) a:hover {
+    background-color: #ff9800;
+}
+
+.vertical-menu li:nth-child(4) a:hover {
+    background-color: #f44336;
+}
+
+</style>
+
+</head>
+<body>
+    <ul class="vertical-menu">
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+    </ul>
+</body>
+</html>

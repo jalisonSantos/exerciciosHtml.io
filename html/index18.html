@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios 18</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.custom-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.custom-radio input[type="radio"] {
+    display: none; 
+}
+
+.radio-mark {
+    height: 20px;
+    width: 20px;
+    border: 2px solid #2196F3;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+    transition: background-color 0.2s;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-mark {
+    background-color: #2196F3;
+}
+
+.radio-mark::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-mark::after {
+    opacity: 1;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none; 
+}
+
+.checkbox-mark {
+    height: 20px;
+    width: 20px;
+    border: 2px solid #4CAF50;
+    position: relative;
+    margin-right: 10px;
+    transition: background-color 0.2s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-mark {
+    background-color: #4CAF50;
+}
+
+.checkbox-mark::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-mark::after {
+    opacity: 1;
+}
+
+</style>
+
+</head>
+<body>
+    <h2>Botões de Rádio Personalizados</h2>
+    <label class="custom-radio">
+        <input type="radio" name="option" checked>
+        <span class="radio-mark"></span>
+        Opção 1
+    </label>
+    <label class="custom-radio">
+        <input type="radio" name="option">
+        <span class="radio-mark"></span>
+        Opção 2
+    </label>
+    <label class="custom-radio">
+        <input type="radio" name="option">
+        <span class="radio-mark"></span>
+        Opção 3
+    </label>
+
+    <h2>Checkboxes Personalizados</h2>
+    <label class="custom-checkbox">
+        <input type="checkbox" checked>
+        <span class="checkbox-mark"></span>
+        Opção A
+    </label>
+    <label class="custom-checkbox">
+        <input type="checkbox">
+        <span class="checkbox-mark"></span>
+        Opção B
+    </label>
+    <label class="custom-checkbox">
+        <input type="checkbox">
+        <span class="checkbox-mark"></span>
+        Opção C
+    </label>
+</body>
+</html>
